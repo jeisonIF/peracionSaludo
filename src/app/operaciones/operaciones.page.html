@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>Opreaciones</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-item>
+    <ion-label>numero 1:</ion-label>
+    <ion-input [(ngModel)]="numero1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> operacion:</ion-label>
+    <ion-input [(ngModel)]="operacion"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>numero 2:</ion-label>
+    <ion-input [(ngModel)]="numero2"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="operar()">
+    Calcular
+  </ion-button>
+  <ion-button routerLink="/home">
+    Inicio
+  </ion-button>
+  <ion-item>
+    <ion-label>el resultado de {{ this.numero1}} {{ this.operacion}} {{ this.numero2}}= {{ this.resultado}}</ion-label>
+  </ion-item>
+</ion-content>
